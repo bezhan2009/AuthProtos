@@ -1,4 +1,4 @@
-module protos
+module github.com/bezhan2009/AuthProtos
 
 go 1.23.6
 
