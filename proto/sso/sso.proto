@@ -15,7 +15,7 @@ message RegisterRequest {
   string last_name = 2;
   string username = 3;
   string email = 4;
-  string hash_password = 5;
+  string password = 5;
 }
 
 message RegisterResponse {
