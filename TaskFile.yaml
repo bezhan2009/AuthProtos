@@ -6,5 +6,5 @@ tasks:
       - gen
     desc: "Generate code from proto files"
     cmds:
-      - protoc --proto_path=./proto/sso --go_out=paths=source_relative:./gen/go/sso --go-grpc_out=paths=source_relative:./gen/go/sso ./proto/sso/sso.proto
+      - protoc --proto_path=./proto/sso --go_out=paths=source_relative:./gen/go/sso --go-grpc_out=paths=source_relative:./gen/go/sso {{.CLI_ARGS}}
 

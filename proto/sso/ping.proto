@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package ping;
+
+option go_package = "karimov.sso.v1;ssov1";
+
+// Сообщение для запроса "Пинг"
+message PingRequest {
+  string message = 1; // Сообщение, которое можно отправить в запросе
+}
+
+// Сообщение для ответа на запрос "Пинг"
+message PingResponse {
+  string reply = 1; // Ответ на запрос
+}
+
+// Сервис для обработки запросов "Пинг"
+service PingService {
+  rpc Ping(PingRequest) returns (PingResponse);
+}
